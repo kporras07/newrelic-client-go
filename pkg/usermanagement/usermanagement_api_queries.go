@@ -211,7 +211,7 @@ func (a *Usermanagement) UserManagementGetGroupsByOrganizationID(
 	return a.GetGroups(
 		"",
 		MultiTenantIdentityGroupFilterInput{
-			OrganizationID: MultiTenantIdentityGroupOrganizationIDInput{
+			OrganizationID: &MultiTenantIdentityGroupOrganizationIDInput{
 				Eq: organizationID,
 			},
 		},
