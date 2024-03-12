@@ -129,7 +129,7 @@ type OrganizationOrganizationCreateJobIdInput struct {
 	// An organization create job id
 	Eq string `json:"eq,omitempty"`
 	// A set of job ids to search for
-	In []string `json:"in"`
+	In []string `json:"in,omitempty"`
 }
 
 // OrganizationOrganizationCreateJobStatusInput - The status of the jobs to search for
